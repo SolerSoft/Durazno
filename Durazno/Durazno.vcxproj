@@ -194,12 +194,14 @@
   <ItemGroup>
     <ClCompile Include="Durazno.cpp" />
     <ClCompile Include="FileIO.cpp" />
+    <ClCompile Include="Plugin.cpp" />
     <ClCompile Include="Settings.cpp" />
     <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Durazno.h" />
     <ClInclude Include="FileIO.h" />
+    <ClInclude Include="Plugin.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Settings.h" />
     <ClInclude Include="Transform.h" />

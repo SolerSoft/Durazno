@@ -6,6 +6,7 @@
 #include "Wrapper.h"
 #include "Settings.h"
 #include "Transform.h"
+#include "Plugin.h"
 #include "FileIO.h"
 #include <string>
 
@@ -172,6 +173,9 @@ extern "C" DWORD WINAPI XInputSetState(DWORD dwUserIndex, XINPUT_VIBRATION* pVib
 	dwUserIndex = set.isDummy ? 0 : set.port;
 	
 	DWORD ret;
+
+	// Always run plugin whether dummy or not
+	PluginSetState(set.rumble, pVibration);
 
 	if(set.isDummy)
 	{
